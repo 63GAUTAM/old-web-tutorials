@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and A fter pseudo salector</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+           
+            
+            
+        }
+        header::before{
+            top: 0;
+            left: 0;
+            content:"";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+            background: url('https://images.unsplash.com/photo-1682778964790-b2fa177b5e45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60') no-repeat center center/cover;
+
+        }
+
+        section {
+
+            /* border: 2px solid red; */
+            height: 360px;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* section::before{
+    content:"this is a content" ;
+} */
+
+        section::after {
+            content: "This is a computer world";
+        }
+
+        .navigation {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: flex;
+
+        }
+
+
+        p {
+            text-align: center;
+
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+
+
+        }
+        .container{
+            display: flex;
+        }
+        .btn{
+            border: 2px solid red;
+            margin: 100px 11px;
+            border-radius:23px ;
+            cursor: pointer;
+            font-size: 15px;
+            color: red;
+            background-color: black;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"> Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+
+        </nav>
+    </header>
+    <section>
+        <h1> Welcome to Coding World </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, magni libero! Qui dolore doloribus veniam sunt
+            libero facilis repellat nostrum iure dolores accusantium porro ab, repudiandae vel dolorem quidem eum
+            tenetur voluptate dicta beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga officia fugiat velit accusamus excepturi assumenda cupiditate, nemo praesentium hic expedita, dolorum laborum culpa ex ut odit modi, odio maxime quo aliquid perspiciatis? Aliquam, ut maxime labore illum quas vitae quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quasi ad soluta corrupti voluptates omnis nulla rem maiores aspernatur nobis. Sequi facere illum natus placeat pariatur. Eveniet culpa enim ab saepe, aliquam voluptatem dolore! Recusandae inventore voluptates atque harum delectus voluptate laudantium ipsum, quod quos dolorem? Ex adipisci expedita velit illo illum doloremque ad blanditiis atque provident similique sequi distinctio praesentium nulla sapiente ea quod labore nam, ipsum, nemo beatae. Nisi perspiciatis libero quaerat doloremque debitis illo minima dignissimos dolores eveniet veniam, esse fuga voluptatem a quisquam magni perferendis officiis voluptate non enim sit fugit, laboriosam neque voluptas. Culpa, est!</p>
+
+    </section>
+    <!-- <hr> -->
+    <div class="container">
+      <div class="container">
+      <button class="btn" id="button">preview</button>
+      <button class="btn" id="button">submit</button>
+    </div>
+    </div>
+</body>
+
+</html>

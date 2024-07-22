@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Query</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'navbar navbar navbar navbar '
+        'section section section aside'
+        'footer footer footer footer'  ;
+      
+    }
+
+    @media only screen and (max-width: 400px) {
+        body {
+            background-color: red;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (min-width: 401px) and (max-width:600px) {
+        body {
+            background-color: blue;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+        .container {
+      
+        grid-template-areas: 
+        'navbar navbar navbar navbar '
+        'aside aside aside aside'
+        ' section  section  section  section '
+        'footer footer footer footer'  ;
+      
+    }
+    }
+
+    @media only screen and (min-width: 601px) and (max-width:900px) {
+        body {
+            background-color: green;
+        }
+        span{
+            margin: 23px;
+            font-size: 1.3rem;
+        }
+        .container {
+      
+      grid-template-areas: 
+      'navbar navbar navbar navbar '
+      'aside aside aside aside'
+      ' section  section  section  section '
+      'footer footer footer footer'  ;
+
+     
+    }
+    aside{
+        display: none;
+
+    }
+}
+    
+
+    @media only screen and (min-width: 901px) and (max-width:1400px) {
+        body {
+            background-color: violet;
+        }
+        span{
+            margin: 23px;
+            font-size: 1.3rem;
+        }
+    }
+
+    .bdr{
+        border: 3px solid black;
+        padding: 23px;
+        background-color: burlywood;
+    }
+   nav{
+    grid-area: navbar;
+   }
+   section{
+    grid-area: section;
+   }
+   aside{
+    grid-area: aside;
+   }
+    
+    footer{
+        grid-area: footer;
+        display: block;
+        text-align: center;
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+           <span>Home</span>
+           <span>About us</span>
+           <span>Servics</span>
+           <span>Contact Us</span>
+        </nav> 
+        
+        <section class="bdr">
+            <h2>Learn CSS in hindi</h2>
+            <p>This is Example of @media query</p>
+        </section>
+
+        <aside class="bdr">
+            <h1>More about us</h1>
+        </aside>
+
+    </div>
+    <footer class="bdr">copyright by Gautam Surolia</footer>
+</body>
+
+</html>

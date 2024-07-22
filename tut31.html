@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        h1 {
+            color: blue;
+            background-color: red;
+            text-align: center;
+        }
+          
+           
+/* div p{
+    background-color: aquamarine;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+} */
+
+/* div > p{
+    background-color: aqua;
+    color: blue;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+
+} */
+
+/* div li p{
+    background-color: blue;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+
+} */
+
+div + p{
+color: white;
+background-color: blueviolet;
+}
+  
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <ul>
+            <li class="li"><p>This is div ke andar ke  ul ke andar ka li ke andar ke P ko target kiya hai</p></li>
+        </ul>
+        <div class="row">
+            <p>This is my paragraph</p>
+            
+        </div>
+        <p>This is my another paragraph</p>
+    </div>
+    <p>This is my first paragraph</p>
+</body>
+</html>

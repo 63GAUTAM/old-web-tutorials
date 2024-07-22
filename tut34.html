@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box shadow and text shadow</title>
+
+  <style>
+    .container {
+      display: flex;
+    }
+
+    .card {
+      /* border: 2px solid red; */
+      background-color: rgb(193, 224, 252);
+
+      margin: 13px 12px;
+      padding: 12px 14px;
+
+      /* box-shadow: offset-x offset-y color ; */
+      /* box-shadow: offset-x offset-y  blur-redius color ; */
+      /* box-shadow: offset-x offset-y  blur-redius  spred-redius color ; */
+
+      /* box-shadow: 12px 21px  rgb(17, 0, 255);
+        box-shadow: -12px -21px  rgb(17, 0, 255); */
+
+      /* box-shadow: 12px 21px 10px  rgb(17, 0, 255); */
+      box-shadow: -10px -12px 13px cyan;
+
+      box-shadow: 12px 14px 10px 12px violet;
+      box-shadow: -12px -14px 10px 12px violet;
+
+      box-shadow: -7px -5px 10px 14px rgba(6, 89, 255, 0.8);
+
+      box-shadow: inset 12px 103px saddlebrown;
+      box-shadow: 12px 13px saddlebrown, 15px 36px rebeccapurple;
+
+    }
+
+    .card h1 {
+      text-shadow: 12px 15px red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card" id="card-1">
+      <h1>Here started C++ course </h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, mollitia! Beatae doloribus provident,
+        suscipit sit id fugiat est et voluptates quae! Deserunt dolorem pariatur nihil similique repudiandae,
+        aliquam, necessitatibus rerum excepturi quae, commodi eos?</p>
+    </div>
+    <div class="card" id="card-2">
+      <h1> This is new heading</h1>
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, mollitia! Beatae doloribus provident,
+        suscipit sit id fugiat est et voluptates quae! Deserunt dolorem pariatur nihil similique repudiandae,
+        aliquam, necessitatibus rerum excepturi quae, commodi eos?</p>
+    </div>
+    <div class="card" id="card-3">
+      <h1>card-3</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, mollitia! Beatae doloribus provident,
+        suscipit sit id fugiat est et voluptates quae! Deserunt dolorem pariatur nihil similique repudiandae,
+        aliquam, necessitatibus rerum excepturi quae, commodi eos?</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

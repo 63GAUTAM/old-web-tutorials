@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+</head>
+<style>
+    .container {
+        background-color: rgb(38, 183, 134);
+        /* display: flex; */
+    }
+
+    .box {
+        background-color: rgb(51, 255, 0);
+        width: 250px;
+        height: 250px;
+        position: relative;
+        animation-name: Gautam2;
+        animation-duration: 2s;
+        animation-iteration-count:1;
+        /* animation-fill-mode:alternate ; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-delay: 2s; */
+        /* animation-direction: alternate; */
+
+/* These properties can be set using this shorthand */
+        /* animation: animation-name animation-duration animaton-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+        /* animation: Gautam 5s ease-in 1s 12 backwards; */
+    }
+
+
+    @keyframes Gautam2{
+        0%{
+            top: 0px ;
+            left: 250px;
+
+        }
+        20%{
+            top: 250px ;
+            left: 0px;
+
+        }
+        50%{
+            top: 200px ;
+            left: 300px;
+
+        }
+        100%{
+            top: 0px ;
+            left: 200px;
+
+        }
+    }
+
+    @keyframes Gautam1 {
+        from {
+            width: 200px;
+        }
+
+        to {
+            width: 500px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a Gautam surolia
+        </div>
+    </div>
+</body>
+
+</html>
